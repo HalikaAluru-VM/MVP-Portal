@@ -766,49 +766,49 @@ export const events = [
   },
 ];
  
-export const coachSection = {
+export const coachSection = { 
   heading1: "Meet Your Gen AI Coach",
   subHeading1: "Empowering our workforce with GenAI",
   coaches: [
     {
       id: 1,
       name: "Gurpreet Singh",
-       image: "src/assets/Gurpreet.jpg",
+      image: Gurpreet,
       techStack: ["Java Gen AI coach"]
     },
     {
       id: 2,
       name: "Prashanth Kulkarni",
-      image: "src/assets/Prashanth.jpg",
-     techStack: [".Net Gen AI coach"]
+      image: Prashanth,
+      techStack: [".Net Gen AI coach"]
     },
     {
       id: 3,
       name: "Nagavardhan Anasuri",
-       image: "src/assets/NagaVardhan.jpg",
-     techStack: ["Cloud/Infra Gen AI coach"]
+      image: NagaVardhan,
+      techStack: ["Cloud/Infra Gen AI coach"]
     },
-       {
+    {
       id: 4,
       name: "Sairam Bandi",
-    image: "src/assets/Sairam.jpg",
-     techStack: ["React Gen AI coach"]
+      image: Sairam,
+      techStack: ["React Gen AI coach"]
     },
     {
       id: 5,
       name: "Sunil Perini",
-     image: "src/assets/Sunil.jpg",
-    techStack: ["Java Gen AI coach"]
+      image: Sunil,
+      techStack: ["Java Gen AI coach"]
     },
-        {
+    {
       id: 6,
       name: "Akhilesh Reddy",
-     image: "src/assets/Akhilesh.png",
-    techStack: ["Java Gen AI coach"]
-    },
-
+      image: Akhilesh,
+      techStack: ["Java Gen AI coach"]
+    }
   ]
 };
+
 
 export const whyItMattersSection = 
   {
@@ -1340,18 +1340,19 @@ export const questionsSection = {
     {
       name: "Supriya Rangadal",
       role: "Lead Program Manager – GenAI Fest",
-       image: "src/assets/Supriya.jpg",
+      image: Supriya,
     },
     {
       name: "Saikishore Tayi",
       role: "App & Infra – EC Coach",
-       image: "src/assets/SaiKishore.jpg",
+      image: SaiKishore,
     },
     {
       name: "Pankaj Kumar",
       role: "Chief Mentor & Coach",
-       image: "src/assets/Pankaj.jpg",
+      image: Pankaj,
     }
   ],
   closingNote: "Let the GenAI Fest begin!"
 };
+
