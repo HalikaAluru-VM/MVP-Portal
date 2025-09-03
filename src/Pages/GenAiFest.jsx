@@ -248,6 +248,7 @@ const GenAiFest = () => {
               <img
                 src={contact.image}
                 alt={contact.name}
+                loading="lazy"
                 className="w-16 h-16 rounded-full object-cover mb-4 shadow-lg border-2 "
               />
 

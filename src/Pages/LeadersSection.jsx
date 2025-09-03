@@ -55,6 +55,7 @@ const LeadersSection = () => {
                   <img
                     src={currentLeader.image}
                     alt={currentLeader.name}
+                    loading="lazy"
                     className="w-full h-full object-cover"
                     onError={(e) => {
                       e.target.src = `https://ui-avatars.com/api/?name=${encodeURIComponent(

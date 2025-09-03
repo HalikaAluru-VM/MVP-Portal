@@ -64,6 +64,7 @@ const CoachSection = () => {
           <img
             src={coach.image}
             alt={coach.name}
+            loading="lazy"
             className="w-full h-full object-cover"
           />
         </div>
