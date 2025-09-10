@@ -1,4 +1,6 @@
 import React, { useState, useCallback } from "react";
+// import { useNavigate } from 'react-router-dom';
+import { RotateCcw } from 'lucide-react';
 import { events, fiscalYears } from "../data.js";
 import Dropdown from "../components/Dropdown.jsx";
 import { Clock, Users, MapPin, ChevronRight, ChevronLeft , ImageOff } from "lucide-react";
@@ -98,6 +100,7 @@ const EventCard = ({ event }) => {
 };
  
 const CodeClub = ({ selectedYear, setSelectedYear }) => {
+  // const navigate = useNavigate();
   const [selectedQuarter, setSelectedQuarter] = useState(3);
   const [activeSection, setActiveSection] = useState('codeclub');
  
@@ -113,12 +116,7 @@ const CodeClub = ({ selectedYear, setSelectedYear }) => {
     return new Date(`${event.month} 1, ${event.year || 2025}`);
   }, []);
  
-  const getEventFY = (date) => {
-    // Fiscal year matches calendar year
-    return date.getFullYear();
-  };
  
-  const currentYear = new Date().getFullYear();
   // Only include years with events, starting from FY-2024
   const years = fiscalYears;
  
@@ -220,7 +218,7 @@ const CodeClub = ({ selectedYear, setSelectedYear }) => {
   }, [filteredEvents, getEventDate]);
  
   return (
-    <div className="min-h-screen bg-black relative overflow-hidden">
+    <div className="min-h-screen bg-gray-900 relative overflow-hidden">
       <div className="max-w-6xl mx-auto px-5 py-8">
         {/* Top Navigation Bar - Single Line Layout */}
         <div className="relative flex flex-col lg:flex-row justify-between items-start lg:items-center gap-4 mb-8">

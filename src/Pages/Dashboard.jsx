@@ -1,104 +1,101 @@
 import React, { useState } from "react";
-import Button from "../components/Button";
-import SearchBar from "../components/SearchBar";
 import CardButton from "../components/CardButton";
-import { User, RefreshCcw } from "lucide-react";
-import { userInfo, cardsData } from "../data";
-import GenAiFest from "./GenAiFest";
-import UpcomingEvents from "./UpcomingEvents";
+import SearchBar from "../components/SearchBar";
+import { useNavigate } from "react-router-dom";
+import { chatbotTemplates,cardRoutes } from "../data";
 
-// import Event from "./Event";
-// import Panel from "./Panel";
 
 const Dashboard = () => {
-  const [selected, setSelected] = useState(null);
-  const [search, setSearch] = useState("");
 
-  const resetDashboard = () => {
-    setSelected(null);
-    setSearch("");
+  const navigate = useNavigate();
+  const [searchValue, setSearchValue] = useState("");
+  const [showSuggestions, setShowSuggestions] = useState(false);
+
+
+  const domainSuggestions = [
+    "Upcoming Events",
+    "Gen AI Fest agenda",
+    "Workshops in Gen AI Fest",
+  ];
+
+
+
+  // Map keywords and aliases to routes for flexible matching
+  const keywordRouteMap = [
+    { keys: ["event", "events", "upcoming events"], route: "/upcoming-events" },
+    { keys: ["genai", "gen ai", "genaifest", "genai fest", "fest"], route: "/genai-fest" },
+    { keys: ["panel", "panels"], route: "/panel" },
+    { keys: ["interview", "interviews"], route: "/interviews" },
+    { keys: ["jd", "jds", "job description"], route: "/jds" },
+    { keys: ["post", "posts", "stories"], route: "/posts" },
+    { keys: ["comingsoon", "coming soon", "comingsoon!", "coming-soon!"], route: "/comingsoon" },
+    { keys: ["coming"], route: "/coming" },
+    { keys: ["coming soon!", "coming-soon!"], route: "/coming-soon!" },
+  ];
+
+  const handleSearch = (e) => {
+    e.preventDefault();
+    const value = searchValue.trim().toLowerCase();
+    for (const entry of keywordRouteMap) {
+      if (entry.keys.some(key => value.includes(key))) {
+        navigate(entry.route);
+        setShowSuggestions(false);
+        return;
+      }
+    }
+    setShowSuggestions(false);
   };
 
-  const renderContent = () => {
-    switch (selected) {
-      case "GenAI Fest":
-        return <GenAiFest />;
-      case "Events":
-        return <UpcomingEvents />;
-      // case "Panel":
-      //   return <Panel />;
-      default:
-        return (
-          <div className="text-center mt-20">
-            <h2 className="text-3xl font-bold mb-4">{selected} Page</h2>
-            <p className="text-gray-400">
-              This is where {selected} related content will appear.
-            </p>
-          </div>
-        );
+  const handleSuggestionClick = (s) => {
+    setSearchValue(s);
+    const val = s.toLowerCase();
+    for (const entry of keywordRouteMap) {
+      if (entry.keys.some(key => val.includes(key))) {
+        navigate(entry.route);
+        setShowSuggestions(false);
+        return;
+      }
     }
+    setShowSuggestions(false);
   };
 
   return (
-    <div className="min-h-screen bg-black text-white p-0 relative  flex flex-col">
-      <div className="absolute top-6 right-8 z-10 flex items-center">
-        <div className="group relative">
-          <Button
-            onClick={resetDashboard}
-            variant="secondary"
-            size="sm"
-            className="flex items-center gap-2"
-          >
-            <RefreshCcw size={15} />
-          </Button>
-          <span className="mr-2 px-2 py-1 text-xs  text-white rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 absolute top-1/2 -translate-y-1/2 right-full whitespace-nowrap">
-            Reset
-          </span>
-        </div>
-      </div>
-      {/* Header */}
-      <div className="flex items-center justify-center py-4 mt-15">
-        <div className="text-center">
-          <h1 className="text-lg font-bold">Hello, {userInfo.name}!</h1>
-          <p className="text-xs text-gray-400">{userInfo.greeting}</p>
+    <div className="w-full max-w-7xl mx-auto py-8 px-4">
+      {/* Greeting */}
+      <div className="mb-6 flex flex-col items-center">
+        <h1 className="text-3xl font-bold mb-4">Hello Sreehitha</h1>
+
+        {/* Centered SearchBar for Dashboard */}
+        <div className="w-full max-w-2xl">
+          <SearchBar
+            value={searchValue}
+            onChange={e => setSearchValue(e.target.value)}
+            onFocus={() => setShowSuggestions(true)}
+            onBlur={() => setTimeout(() => setShowSuggestions(false), 150)}
+            onSubmit={handleSearch}
+            placeholder="Search ..."
+            showSuggestions={showSuggestions}
+            suggestions={domainSuggestions}
+            onSuggestionClick={handleSuggestionClick}
+          />
         </div>
       </div>
 
-      {/* Content */}
-      {!selected ? (
-        <div className="flex flex-1 items-center justify-center">
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
-            {cardsData
-              .filter((c) =>
-                c.label.toLowerCase().includes(search.toLowerCase())
-              )
-              .map((card) => (
-                <CardButton
-                  key={card.label}
-                  label={card.label}
-                  icon={card.icon}
-                  color={card.color}
-                  onClick={() => setSelected(card.label)}
-                />
-              ))}
-          </div>
-        </div>
-      ) : (
-        <div className="px-40">{renderContent()}</div>
-      )}
-      {/* SearchBar at the bottom */}
-      {/* SearchBar at the bottom (only for landing page) */}
-      {!selected && (
-        <div className="mb-8 flex justify-center">
-          <div className="w-full max-w-2xl">
-            <SearchBar
-              value={search}
-              onChange={(e) => setSearch(e.target.value)}
-              placeholder="Search for content types..."
-            />
-          </div>
-        </div>
-      )}
+      {/* Templates Grid */}
+      <div
+        className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 mx-auto"
+        style={{ maxWidth: 980 }}
+      >
+        {chatbotTemplates.map((template, index) => (
+          <CardButton
+            key={index}
+            label={template.title}
+            icon={template.icon}
+            description={template.description}
+            onClick={() => navigate(cardRoutes[index])}
+          />
+        ))}
+      </div>
     </div>
   );
 };

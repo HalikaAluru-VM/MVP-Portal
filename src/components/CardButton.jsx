@@ -1,16 +1,25 @@
 import React from "react";
- 
-const CardButton = ({ label, icon: Icon, color, onClick }) => {
+
+const CardButton = ({ label, icon: Icon, description, onClick }) => {
   return (
     <div
       onClick={onClick}
-  className={`cursor-pointer flex flex-col items-center justify-center rounded-xl p-3 min-w-[140px] px-8 text-white text-sm font-medium shadow-lg hover:scale-105 transition-transform duration-300`}
-      style={{ background: color }}
+      className="bg-gray-800 rounded-lg p-3 hover:bg-gray-750 transition-colors cursor-pointer border border-gray-700 hover:border-gray-600 min-h-[90px] flex flex-col justify-between w-full h-full"
+      style={{ minHeight: 95 }}
     >
-  {Icon && <Icon className="w-4 h-4 mb-1" />}
-      <span>{label}</span>
+      <div className="flex items-start mb-2">
+        <div className="w-8 h-8 bg-gray-700 rounded-lg flex items-center justify-center mr-2">
+          {Icon && <Icon size={18} className="text-gray-300" />}
+        </div>
+        <div>
+          <h3 className="text-base font-semibold text-white mb-1">{label}</h3>
+          {description && (
+            <p className="text-gray-400 text-xs leading-relaxed">{description}</p>
+          )}
+        </div>
+      </div>
     </div>
   );
 };
- 
+
 export default CardButton;
