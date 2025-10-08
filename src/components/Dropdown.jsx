@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import { ChevronDown } from "lucide-react";
  
-const Dropdown = ({ options, value, onChange, highlightYear, isSection = false }) => {
+const Dropdown = ({ options, value, onChange, isSection = false }) => {
   const [isOpen, setIsOpen] = useState(false);
   const ref = useRef(null);
  
@@ -22,30 +22,30 @@ const Dropdown = ({ options, value, onChange, highlightYear, isSection = false }
   // Format display text based on dropdown type
   const getDisplayText = (val) => {
     if (isSection) {
-      return val === 'codeclub' ? 'CodeClub' : 'LearniX';
+      return val === 'codeclub' ? 'Code Club' : 'Learnix';
     }
     return `FY-${val}`;
   };
  
   return (
-    <div className="relative inline-block w-28" ref={ref}>
+    <div className="relative inline-block w-30" ref={ref}>
       {/* Trigger - Always highlighted when any year is selected */}
       <button
         type="button"
         aria-haspopup="listbox"
         aria-expanded={isOpen}
         onClick={() => setIsOpen((o) => !o)}
-        className="w-full px-2 py-1 pr-6 rounded-lg font-semibold border border-gray-600 text-sm flex items-center justify-between bg-gray-700 text-white"
+        className="w-30 px-3 py-1 pr-8 rounded-lg font-medium border-none text-sm flex items-center justify-between bg-[#00CFFF] text-black shadow-none h-8"
       >
         <span>{getDisplayText(value)}</span>
-        <ChevronDown className={`h-3 w-3 transition-transform ${isOpen ? "rotate-180" : ""}`} />
+        <ChevronDown className={`h-2 w-2 transition-transform text-black ${isOpen ? "rotate-180" : ""}`} />
       </button>
  
       {/* Options */}
       {isOpen && (
         <div
           role="listbox"
-          className="absolute mt-1 w-full bg-gray-700 rounded-lg shadow-lg z-10 max-h-60 overflow-y-auto"
+          className="absolute mt-1 w-full bg-[#00CFFF] rounded-lg shadow-lg z-2 max-h-48 overflow-y-auto"
         >
           {options.map((option) => (
             <div
@@ -53,14 +53,7 @@ const Dropdown = ({ options, value, onChange, highlightYear, isSection = false }
               aria-selected={option === value}
               key={option}
               onClick={() => handleSelect(option)}
-              className={`px-3 py-2 cursor-pointer text-sm
-                ${isSection
-                  ? (option === value ? "bg-gray-600 text-white font-bold" : "text-white hover:bg-gray-600")
-                  : (option === highlightYear
-                      ? "bg-gradient-to-r from-gray-500 to-gray-500 text-white font-bold"
-                      : "text-white hover:bg-gray-600")
-                }
-              `}
+              className={`px-3 py-2 cursor-pointer text-sm font-medium text-black hover:bg-cyan-300 rounded-lg ${option === value ? "bg-cyan-200" : ""}`}
             >
               {getDisplayText(option)}
             </div>

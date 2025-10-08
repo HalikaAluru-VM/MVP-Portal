@@ -17,21 +17,6 @@ import Ganesna from "./assets/Ganesna.jpg";
 import Kuchana from "./assets/Kuchana.jpeg";
 import Mohammed from "./assets/Mohammed.jpg";
 import Pavan from "./assets/Pavan.jpg";
-import Akhilesh from "./assets/Akhilesh.png";
-import AlokDhagat from "./assets/AlokDhagat.png";
-import Gurpreet from "./assets/Gurpreet.jpg";
-import NagaVardhan from "./assets/NagaVardhan.jpg";
-import PhaniParankusham from "./assets/PhaniParankusham.jpg";
-import PrasantKraleti from "./assets/PrasantKraleti.jpg";
-import Prashanth from "./assets/Prashanth.jpg";
-import SaiBharat from "./assets/SaiBharat.jpg";
-import SaiKishore from "./assets/SaiKishore.jpg";
-import Sairam from "./assets/Sairam.jpg";
-import Siva from "./assets/Siva.png";
-import Sunil from "./assets/Sunil.jpg";
-import Uma from "./assets/Uma.png";
-import Supriya from "./assets/Supriya.jpg";
-import Pankaj from "./assets/Pankaj.jpg";
 
 export const cardRoutes = [
   "/upcoming-events",
@@ -40,9 +25,6 @@ export const cardRoutes = [
   "/interviews",
   "/jds",
   "/posts",
-  "/comingsoon",
-  "/coming",
-  "/coming-soon!",
 ];
 
 export const chatbotTemplates = [
@@ -82,24 +64,6 @@ export const chatbotTemplates = [
         description: "Standardized job descriptions aligned to TSC framework.",
         preview: true
       },
-      {
-        icon:Clock ,
-        title: "Coming Soon",
-        description: "",
-        preview: true
-      },
-      {
-        icon: Clock,
-        title: "Coming",
-        description: "",
-        preview: true
-      },
-      {
-        icon: Clock,
-        title: "Coming Soon!",
-        description: "",
-        preview: true
-      }
 ];
 
 export const welcomeSection = {
@@ -115,48 +79,48 @@ export const leadersSection = {
     {
       id: 1,
       name: "Uma Gogineni",
-  image: Uma,
+      image: "src/assets/Uma.png",
       message: " GenAI is revolutionizing software engineering, impacting all aspects of SDLC – from requirements to production support. It promises efficiencies through automated code generation, intelligent reviews, enhanced test coverage, and advanced problem-solving.Harnessing GenAI's benefits requires deliberate skill development and adaptation across our engineering teams. Towards this end, we are implementing a comprehensive learning framework. This includes structured workshops, GenAI Labs for hands-on experience, and practice with insurance-specific scenarios.GenAI Fest is our new initiative to equip all our engineers with GenAI skills, recognizing its fundamental role in software development for insurance. Practice projects with GenAI Coaches will help engineers apply these skills before using them on client deliverables. This support also ensures that engineers learn from collective experience.Our commitment to leading this transformation will enhance value for clients and create impactful roles for our engineers. Mastery of GenAI is crucial for winning and retaining clients. We urge each of you to embrace this initiative with commitment and enthusiasm – The time to develop these critical skills is NOW – our success as individuals and organization depends on it."
     },
     {
       id: 2,
       name: "Alok Dhagat",
-  image: AlokDhagat,
+        image: "src/assets/AlokDhagat.png",
           message: "As we stand at the edge of a transformative shift in how software is envisioned and delivered, I want to take a moment to share something close to our collective goal.I am glad that our engineering practice team has proactively started conducting sessions on Generative AI—not just as a learning initiative, but as a strategic enabler for our future. This is not business as usual. This is about preparing ourselves to lead the change, not follow it.Our customer has made it clear: Gen AI adoption is a priority. And when they finalize their tool of choice, I want us to be the team that’s ready from Day 1—not catching up, but driving outcomes from the very beginning. That readiness starts now—with each of you, with every session, and with how open we are to thinking differently.Let me say this clearly: technology will keep evolving. Tools will come and go. But what sets us apart is you. Your curiosity, your adaptability, your hunger to challenge the status quo—these are the real differentiators. This is your chance to look beyond conventional boundaries, question old patterns, and reimagine what’s possible.So I urge each of you—lean in. Participate whole-heartedly. Embrace the discomfort of new learning. Because the teams that grow now are the ones that will lead tomorrow.Let’s not just be Gen AI–ready—let’s be Gen AI–pioneers.Proud to be on this journey with you"
     },
     {
       id: 3,
       name: "Sai Kishore Tayi",
-           image: SaiKishore,
+           image: "src/assets/SaiKishore.jpg",
           message: "Remember 2015? Organizations that embraced cloud-first strategies didn’t just survive—they thrived. Those who hesitated, who waited for the right moment,found themselves scrambling to catch up years later. Today, Gen AI presents us with the same pivotal moment, the same opportunity to lead or be left behind.The future doesn’t wait for anyone to be ready—it rewards those who act.Start today:Experiment with Gen AI tools in your daily workShare your discoveries with your project teamsChallenge traditional approaches with AI-powered alternativesThink beyond automationThe Gen AI revolution isn’t coming—it’s here.Our Technology Solution Center is committed to supporting this journey, providing the resources, knowledge, and platform for every team member to explore, learn, and excel in this new landscape. I am very excited and proud to be part of this journey.Together, let’s ensure that when we look back at 2025, we’ll remember it as the year we didn’t just adapt to change—we led it.Join the Gen AI revolution led by Technology Solution Center through code clubs, workshops & weekly bytes from MVP portal.Connect with TSC Architects & Team.The choice is simple: lead or fall behind. The future is intelligent. The future is now."
     },
     {
       id: 4,
       name: "Prasant Kraleti",
-           image: PrasantKraleti,
+           image: "src/assets/PrasantKraleti.jpg",
           message: "Think about this—when the first smartphones arrived, some people dismissed them as a fad. Fast forward, now we can’t imagine life without them!The same is true for GenAI. It’s not just another tech wave; it’s a shift that will redefine how we work and innovate. And the teams that take small steps now—learning, experimenting, asking questions—will be the ones leading tomorrow.Our customer has already prioritized GenAI, and in the coming months and years we don’t want to be scrambling to adapt. We want to be ahead of the curve, shaping solutions, not reacting to them. So, let’s start now. Our Technology Solutions (TSC) team is proactively organizing workshops to help us learn and practice by doing! Do join these workshops to gain hands-on learning, explore how GenAI can help us in the work we do and challenge the old ways of doing things. Because the future won’t wait, and neither should we!!Proud to be on this journey with you!"
     },
     {
       id: 5,
       name: "Phani parankusham",
-         image: PhaniParankusham,
+         image: "src/assets/PhaniParanKusham.jpg",
           message: "It is interesting times to be a software engineer. The industry is at a pivotal moment, with Artificial Intelligence (AI) reshaping how we work, solve problems, and deliver value. AI is no longer a futuristic concept from movies but a powerful driver of innovation and efficiency, leading to huge competitive advantage in today’s digital world.Whether it is GitHub Copilot helping us code faster, to generative AI solutions helping tackle complex challenges, the use cases are expanding rapidly. Our customers recognize this shift and are prioritizing GenAI adoption. As an organization, we are committed to being a trusted partner in their AI journey.In line with this vision, our Technology Solutions team has embarked on an initiative to enable us on Generative AI. I strongly encourage and urge all of you to take advantage of this initiative and grasp the knowledge. Please understand, learning GenAI is not just a skill upgrade – it is a career-defining progression. The engineers who understand and apply GenAI will lead innovation in the future. And those of us who do not, will risk being outpaced.Please make the best use of this opportunity. Do participate whole-heartedly and utilize our AI Labs to get hands-on. Our TSC colleagues will always be around to lend a helping hand. Remember, this is not an optional activity but an opportunity to stay relevant and grow in our roles. So collectively let us embrace AI – not just as a trend, but as a core skill. Let us learn AI, use AI, and lead with AI.”"
     },
     {
       id: 6,
       name: "Bharat sai Nallaparaju",
-         image: SaiBharat,
+         image: "src/assets/SaiBharat.jpg",
           message: "GenAI is not just a buzzword, it is a transformative shift in how we deliver value.Our clients are demanding more speed, and efficiency, and GenAI equips us with the tools to meet those expectations. Solutions like GitHub Copilot are accelerating how we write code, refactor code, maintain code, code review, documentation and unit testing etc. Design platforms like Figma AI are streamlining UI/UX design through smart suggestions and auto-layouts, while AI-enabled data tools like Seek AI, and Google Cloud AutoML are transforming how we query, analyse, and derive insights from complex datasets.As our customers adopt these capabilities to drive efficiency, we must stay ahead by continuously learning, experimenting, and embedding such tools into our daily delivery. This is not about automation, it is about amplifying our creativity and accelerating delivery.Let us use this GenAI Fest as a launchpad to upskill, challenge the status quo, and reimagine how we deliver smarter, faster, and more impactful solutions. The future is already here, let us lead it."
     },
        {
       id: 7,
       name: "Siva Pillai",
-  image: Siva,
+       image: "src/assets/Siva.png",
           message: "As you all are aware, in the last 12–18 months, Generative AI (Gen AI) has been quietly but persistently influencing our industry and the way the insurance business and technology work. Our largest client, ERIE Insurance, has started actively pursuing opportunities for adopting Gen AI technologies to solve business problems, improve process efficiencies, simplify technology adoption, and increase developer productivity. They have also set up an AI Center of Excellence for reviewing, approving, and governing the adoption of AI across the enterprise in a thoughtful and secure manner.As their largest and strategic vendor partner, it’s imperative that we stay ahead of the AI curve to guide our clients like ERIE and others in quickly but safely adopting AI technologies to solve their business and technology problems. Being their largest partner, it is key for us to look at means and ways to improve the productivity and efficiency of our employees, so that we can work faster and smarter.I am glad that our Technology Solution Centers (TSCs) are taking multiple broad steps to enhance the AI awareness and skills of our employees. However, these programs will bear fruit and do so quickly only with your active, focused involvement and enthusiastic adoption of the lessons and exposure these programs provide. More than the benefit we intend to provide for our clients and VM as an organization, these programs will position each of you for an improved career path and help you to successfully surf this giant technology wave. I am eagerly looking forward to seeing each of you as an AI Champion, who will propel us forward and help retain our top spot as a preferred technology and P&C business solutions partner for ERIE and our other clients."
     }
   ]
 };
- 
+
 
 export const fiscalYears = [2024, 2025, 2026, 2027, 2028];
  
@@ -164,7 +128,6 @@ export const events = [
   {
     id: 1,
     title: "Code Club – PDF Form Validation",
-    subtitle: "Learn how to validate PDF forms",
     date: "03",
     month: "SEP",
     year: 2025,
@@ -173,11 +136,12 @@ export const events = [
     location: "Hybrid (AI Lab & MS Teams)",
     instructor: "",
     images: [],
+    description:
+      "Learn how to validate PDF forms efficiently using modern tools. Improve data accuracy and streamline your workflow in real-world scenarios.",
   },
   {
     id: 2,
     title: "Code Club – SmartRe",
-    subtitle: "AI Revolution in Real Estate",
     date: "17",
     month: "SEP",
     year: 2025,
@@ -186,12 +150,12 @@ export const events = [
     location: "Hybrid (AI Lab & MS Teams)",
     instructor: "",
     images: [],
+    description:
+      "Discover SmartRe and its impact on automation and reporting. Explore practical use cases and integration strategies for your projects.",
   },
   {
     id: 3,
-    title:
-      "Code Club – Simplifying Innovation: Unleashing Low-Code Potential with Copilot Studio",
-    subtitle: "Low-Code with Copilot Studio",
+    title: "Code Club – Unleashing Low-Code Potential with Copilot Studio",
     date: "24",
     month: "SEP",
     year: 2025,
@@ -200,11 +164,12 @@ export const events = [
     location: "Hybrid (AI Lab & MS Teams)",
     instructor: "",
     images: [],
+    description:
+      "Unlock the power of low-code development with Copilot Studio. Build applications faster and empower your team to innovate.",
   },
   {
     id: 4,
     title: "Code Club – Test Lifecycle Automation",
-    subtitle: "Automate your test lifecycle",
     date: "08",
     month: "OCT",
     year: 2025,
@@ -213,11 +178,12 @@ export const events = [
     location: "Hybrid (AI Lab & MS Teams)",
     instructor: "",
     images: [],
+    description:
+      "Automate your test lifecycle for improved efficiency and reliability. Learn best practices for continuous testing and deployment.",
   },
   {
     id: 5,
     title: "Code Club – Playwright Automation framework",
-    subtitle: "Master Playwright for automation",
     date: "22",
     month: "OCT",
     year: 2025,
@@ -226,11 +192,12 @@ export const events = [
     location: "Hybrid (AI Lab & MS Teams)",
     instructor: "",
     images: [],
+    description:
+      "Master Playwright for robust browser automation. Enhance your testing capabilities with advanced scripting and reporting features.",
   },
   {
     id: 6,
     title: "Code Club",
-    subtitle: "General Code Club Session",
     date: "06",
     month: "MAR",
     year: 2025,
@@ -239,11 +206,12 @@ export const events = [
     location: "Hybrid (AI Lab & MS Teams)",
     instructor: "",
     images: [],
+    description:
+      "Join Code Club for collaborative learning and hands-on coding sessions. Share knowledge and solve real-world programming challenges.",
   },
   {
     id: 7,
     title: "Building Scalable APIs using Github Copilot",
-    subtitle: "API Development with Copilot",
     date: "20",
     month: "MAR",
     year: 2025,
@@ -251,13 +219,14 @@ export const events = [
     duration: "60 min",
     location: "Hybrid (AI Lab & MS Teams)",
     instructor: "Halika Lakshmi Durga Aluru",
-     images: [image2],
+    images: [image2],
+    description:
+      "Learn to build scalable APIs with the help of GitHub Copilot. Discover tips for efficient design, implementation, and maintenance.",
   },
   {
     id: 8,
     title:
       "Seamless Data Integration with AWS AppFlow: Connecting SaaS Platforms",
-    subtitle: "AWS AppFlow & SaaS Integration",
     date: "03",
     month: "APR",
     year: 2025,
@@ -266,11 +235,12 @@ export const events = [
     location: "Hybrid (AI Lab & MS Teams)",
     instructor: "Arafat Abubakar Habib",
     images: [Habib],
+    description:
+      "Integrate SaaS platforms effortlessly using AWS AppFlow. Streamline data flows and boost productivity across your organization.",
   },
   {
     id: 9,
     title: "GW Cloud Upgrade best practices",
-    subtitle: "Best Practices for Cloud Upgrades",
     date: "17",
     month: "APR",
     year: 2025,
@@ -279,11 +249,12 @@ export const events = [
     location: "Hybrid (AI Lab & MS Teams)",
     instructor: "Nandha Kishore Marri",
     images: [NandhaK],
+    description:
+      "Explore best practices for upgrading GW Cloud environments. Ensure smooth transitions and minimize downtime during migrations.",
   },
   {
     id: 10,
     title: "DAPR into Microservices with .NET",
-    subtitle: "Microservices with DAPR & .NET",
     date: "05",
     month: "JUN",
     year: 2025,
@@ -291,12 +262,13 @@ export const events = [
     duration: "60 min",
     location: "Hybrid (AI Lab & MS Teams)",
     instructor: "Chiranjeevi Chandrasekhar Talabhadra",
-     images: [Chiranjeevi],
+    images: [Chiranjeevi],
+    description:
+      "Leverage DAPR for building resilient microservices in .NET. Simplify communication and state management in distributed systems.",
   },
   {
     id: 11,
     title: "Design Patterns for Distributed systems in Cloud Environment",
-    subtitle: "Distributed Systems Design Patterns",
     date: "19",
     month: "JUN",
     year: 2025,
@@ -305,12 +277,12 @@ export const events = [
     location: "Hybrid (AI Lab & MS Teams)",
     instructor: "Chiranjeet Karmakar",
     images: [],
+    description:
+      "Understand key design patterns for distributed cloud systems. Improve scalability, reliability, and maintainability of your solutions.",
   },
   {
     id: 12,
-    title:
-      "Understanding React Server Components – The Future of React Rendering",
-    subtitle: "React Server Components",
+    title: "Understanding React Server Components",
     date: "03",
     month: "JUL",
     year: 2025,
@@ -318,12 +290,13 @@ export const events = [
     duration: "60 min",
     location: "Hybrid (AI Lab & MS Teams)",
     instructor: "Kavya Malimpati",
-     images: [Kavya],
+    images: [Kavya],
+    description:
+      "Dive into React Server Components and their benefits. Learn how to optimize rendering and improve application performance.",
   },
   {
     id: 13,
     title: "Dockerizing Java: From Monolith to Container",
-    subtitle: "Java Monolith to Container",
     date: "17",
     month: "JUL",
     year: 2025,
@@ -331,12 +304,13 @@ export const events = [
     duration: "60 min",
     location: "Hybrid (AI Lab & MS Teams)",
     instructor: "Ananth Kumar Ganesna",
-     images: [Ganesna],
+    images: [Ganesna],
+    description:
+      "Transform Java monoliths into efficient containers using Docker. Enhance deployment flexibility and scalability for your apps.",
   },
   {
     id: 14,
     title: "Spring Boot + Observability (Micrometre + Prometheus + Grafana)",
-    subtitle: "Spring Boot Observability",
     date: "31",
     month: "JUL",
     year: 2025,
@@ -344,7 +318,9 @@ export const events = [
     duration: "60 min",
     location: "Hybrid (AI Lab & MS Teams)",
     instructor: "Venkaramana Kuchana",
-     images: [Kuchana],
+    images: [Kuchana],
+    description:
+      "Monitor Spring Boot applications with Micrometer, Prometheus, and Grafana. Gain insights and ensure high availability in production.",
   },
   {
     id: 15,
@@ -357,6 +333,8 @@ export const events = [
     location: "Mantri",
     instructor: "",
     images: [],
+    description:
+      "Learn techniques to optimize queries for better performance. Improve efficiency and reduce resource consumption in your applications.",
   },
   {
     id: 16,
@@ -369,6 +347,8 @@ export const events = [
     location: "Hybrid (AI Lab & MS Teams)",
     instructor: "",
     images: [],
+    description:
+      "Discover how IDP can simplify developer workflows and reduce cognitive load. Enhance productivity and streamline engineering processes.",
   },
   {
     id: 17,
@@ -381,6 +361,8 @@ export const events = [
     location: "Hybrid (AI Lab & MS Teams)",
     instructor: "",
     images: [],
+    description:
+      "Explore strategies to improve coding standards and best practices. Write cleaner, more maintainable, and robust code.",
   },
   {
     id: 18,
@@ -393,6 +375,8 @@ export const events = [
     location: "MS Teams",
     instructor: "",
     images: [],
+    description:
+      "Understand GenAI's influence on engineering practices and learning. Discover new opportunities for growth and innovation.",
   },
   {
     id: 19,
@@ -406,6 +390,8 @@ export const events = [
     location: "MS Teams",
     instructor: "",
     images: [],
+    description:
+      "Learn to build a First Notice of Loss app using Copilot and LearniX. Streamline claims processing and improve customer experience.",
   },
   {
     id: 20,
@@ -418,6 +404,8 @@ export const events = [
     location: "MS Teams",
     instructor: "",
     images: [],
+    description:
+      "Explore how GenAI is transforming the insurance industry with LearniX. Drive innovation and efficiency in insurance processes.",
   },
   {
     id: 21,
@@ -431,6 +419,8 @@ export const events = [
     location: "MS Teams",
     instructor: "",
     images: [],
+    description:
+      "Automate infrastructure management using Copilot, Terraform, and GenAI. Achieve faster deployments and improved reliability.",
   },
   {
     id: 22,
@@ -443,6 +433,8 @@ export const events = [
     location: "MS Teams",
     instructor: "",
     images: [],
+    description:
+      "Harness Databricks GenAI for advanced data analytics and insights. Empower your organization to make data-driven decisions.",
   },
   {
     id: 23,
@@ -455,6 +447,8 @@ export const events = [
     location: "MS Teams",
     instructor: "",
     images: [],
+    description:
+      "Implement automated test life cycles with GenAI for better quality. Reduce manual effort and accelerate release cycles.",
   },
   {
     id: 24,
@@ -467,6 +461,8 @@ export const events = [
     location: "Palnadu SW Conference room",
     instructor: "",
     images: [],
+    description:
+      "Join FunTech Friday for engaging tech activities and networking. Learn, share, and have fun with fellow tech enthusiasts.",
   },
   {
     id: 25,
@@ -479,6 +475,8 @@ export const events = [
     location: "Hybrid (AI Lab & MS Teams)",
     instructor: "",
     images: [],
+    description:
+      "Master API design using OpenAPI specifications. Build robust, scalable, and well-documented APIs for your projects.",
   },
   {
     id: 26,
@@ -491,6 +489,8 @@ export const events = [
     location: "Hybrid (AI Lab & MS Teams)",
     instructor: "",
     images: [],
+    description:
+      "Learn monitoring and observability techniques for cloud systems. Ensure reliability and performance in your cloud deployments.",
   },
   {
     id: 27,
@@ -503,6 +503,8 @@ export const events = [
     location: "Hybrid (AI Lab & MS Teams)",
     instructor: "",
     images: [],
+    description:
+      "Participate in BrainStation for collaborative learning and innovation. Solve challenges and expand your technical expertise.",
   },
   {
     id: 28,
@@ -515,6 +517,8 @@ export const events = [
     location: "Hybrid (AI Lab & MS Teams)",
     instructor: "",
     images: [],
+    description:
+      "Master unit testing for .NET applications to ensure code quality. Learn best practices for writing effective and reliable tests.",
   },
   {
     id: 29,
@@ -527,6 +531,8 @@ export const events = [
     location: "Hybrid (AI Lab & MS Teams)",
     instructor: "",
     images: [],
+    description:
+      "Explore essential tools for DevSecOps and secure development. Integrate security into your CI/CD pipelines and workflows.",
   },
   {
     id: 30,
@@ -539,6 +545,8 @@ export const events = [
     location: "Hybrid (AI Lab & MS Teams)",
     instructor: "",
     images: [],
+    description:
+      "Participate in BrainStation for collaborative learning and innovation. Solve challenges and expand your technical expertise.",
   },
   {
     id: 31,
@@ -551,6 +559,8 @@ export const events = [
     location: "Hybrid (AI Lab & MS Teams)",
     instructor: "",
     images: [],
+    description:
+      "Learn to deploy .NET microservices using Kubernetes, ACR, and Azure DevOps. Streamline your cloud-native application delivery.",
   },
   {
     id: 32,
@@ -562,9 +572,10 @@ export const events = [
     duration: "60 min",
     location: "Hybrid (AI Lab & MS Teams)",
     instructor: "Md Maqdoom Mohiuddin, Pavan Dinavahi",
-     images: [Mohammed, Pavan],
+    images: [Mohammed, Pavan],
+    description:
+      "Discover Wiremock for effective API mocking and testing. Enhance your development workflow with reliable simulations.",
   },
-  // December 2024 events for FY-2024 (added only if not already present)
   {
     id: 33,
     title: "Streamlining DevOps workflows using Co-pilot",
@@ -576,6 +587,8 @@ export const events = [
     location: "VAM Towers",
     instructor: "",
     images: [],
+    description:
+      "Streamline DevOps workflows with GitHub Copilot for automation. Boost productivity and reduce manual intervention in pipelines.",
   },
   {
     id: 34,
@@ -588,6 +601,8 @@ export const events = [
     location: "Mantri",
     instructor: "",
     images: [],
+    description:
+      "Implement GenAI solutions for modern software engineering. Drive innovation and efficiency in your development projects.",
   },
   {
     id: 35,
@@ -601,6 +616,8 @@ export const events = [
     location: "Mantri",
     instructor: "",
     images: [],
+    description:
+      "Get an overview of GenAI and its impact on software engineering. Learn about Snowflake Copilot and its practical applications.",
   },
   {
     id: 36,
@@ -613,6 +630,8 @@ export const events = [
     location: "Mantri",
     instructor: "",
     images: [],
+    description:
+      "Join discussions on planned use cases for GenAI adoption. Share ideas and collaborate on innovative solutions.",
   },
   {
     id: 37,
@@ -624,6 +643,9 @@ export const events = [
     duration: "60 min",
     location: "Mantri",
     instructor: "",
+    images: [],
+    description:
+      "Explore data analysis and recommendation use cases with GenAI. Improve decision-making and business outcomes through insights.",
   },
   {
     id: 38,
@@ -637,6 +659,8 @@ export const events = [
     location: "Mantri",
     instructor: "",
     images: [],
+    description:
+      "Get familiar with Copilot in Snowflake for data mining tasks. Enhance your data workflows and uncover valuable insights.",
   },
   {
     id: 39,
@@ -649,6 +673,8 @@ export const events = [
     location: "Mantri",
     instructor: "",
     images: [],
+    description:
+      "Share and implement accomplished queries for better results. Collaborate to refine and optimize your data solutions.",
   },
   {
     id: 40,
@@ -662,6 +688,8 @@ export const events = [
     location: "Mantri",
     instructor: "",
     images: [],
+    description:
+      "Generate SQL queries using Copilot and follow best practices. Improve code quality and efficiency in database operations.",
   },
   {
     id: 41,
@@ -674,6 +702,8 @@ export const events = [
     location: "Hybrid (AI Lab & MS Teams)",
     instructor: "",
     images: [],
+    description:
+      "Design REST API templates with Spring Boot and clean architecture. Build scalable and maintainable backend services.",
   },
   {
     id: 42,
@@ -686,6 +716,8 @@ export const events = [
     location: "Mantri",
     instructor: "",
     images: [],
+    description:
+      "Create quality check and data profiling queries for accuracy. Ensure data integrity and reliability in your systems.",
   },
   {
     id: 43,
@@ -698,6 +730,8 @@ export const events = [
     location: "Mantri",
     instructor: "",
     images: [],
+    description:
+      "Celebrate FunTech Friday with a festive Christmas theme. Enjoy tech talks, games, and holiday networking opportunities.",
   },
   {
     id: 44,
@@ -710,6 +744,8 @@ export const events = [
     location: "Mantri",
     instructor: "",
     images: [],
+    description:
+      "Build multiple data validation queries for robust data management. Improve data quality and streamline validation processes.",
   },
   {
     id: 45,
@@ -723,6 +759,8 @@ export const events = [
     location: "Mantri",
     instructor: "",
     images: [],
+    description:
+      "Use Copilot in collaborative environments for data validation. Enhance teamwork and efficiency in query building.",
   },
   {
     id: 46,
@@ -735,6 +773,8 @@ export const events = [
     location: "Mantri",
     instructor: "",
     images: [],
+    description:
+      "Implement and analyze achieved queries for optimal results. Gain insights and improve your data processing workflows.",
   },
   {
     id: 47,
@@ -747,6 +787,8 @@ export const events = [
     location: "Mantri",
     instructor: "",
     images: [],
+    description:
+      "Optimize performance and conduct code reviews with GenAI. Ensure high-quality, efficient, and maintainable codebases.",
   },
   {
     id: 48,
@@ -759,6 +801,8 @@ export const events = [
     location: "Mantri",
     instructor: "",
     images: [],
+    description:
+      "Learn performance optimization techniques for software projects. Boost speed, scalability, and resource efficiency.",
   },
   {
     id: 49,
@@ -771,6 +815,8 @@ export const events = [
     location: "Mantri",
     instructor: "",
     images: [],
+    description:
+      "Optimize developed code using Copilot for better performance. Achieve faster execution and improved maintainability.",
   },
   {
     id: 50,
@@ -783,6 +829,8 @@ export const events = [
     location: "Mantri",
     instructor: "",
     images: [],
+    description:
+      "Apply best practices for performance improvements in your projects. Enhance user experience and system reliability.",
   },
 ];
  
@@ -793,41 +841,43 @@ export const coachSection = {
     {
       id: 1,
       name: "Gurpreet Singh",
-      image: Gurpreet,
+       image: "src/assets/Gurpreet.jpg",
       techStack: ["Java Gen AI coach"]
     },
     {
       id: 2,
       name: "Prashanth Kulkarni",
-      image: Prashanth,
-      techStack: [".Net Gen AI coach"]
+      image: "src/assets/Prashanth.jpg",
+     techStack: [".Net Gen AI coach"]
     },
     {
       id: 3,
       name: "Nagavardhan Anasuri",
-      image: NagaVardhan,
-      techStack: ["Cloud/Infra Gen AI coach"]
+       image: "src/assets/NagaVardhan.jpg",
+     techStack: ["Cloud/Infra Gen AI coach"]
     },
-    {
+       {
       id: 4,
       name: "Sairam Bandi",
-      image: Sairam,
-      techStack: ["React Gen AI coach"]
+    image: "src/assets/Sairam.jpg",
+     techStack: ["React Gen AI coach"]
     },
     {
       id: 5,
       name: "Sunil Perini",
-      image: Sunil,
-      techStack: ["Java Gen AI coach"]
+     image: "src/assets/Sunil.jpg",
+    techStack: ["Java Gen AI coach"]
     },
-    {
+        {
       id: 6,
       name: "Akhilesh Reddy",
-      image: Akhilesh,
-      techStack: ["Java Gen AI coach"]
-    }
+     image: "src/assets/Akhilesh.png",
+    techStack: ["Java Gen AI coach"]
+    },
+
   ]
 };
+
 export const whyItMattersSection = 
   {
     title: " Why This Matters",
@@ -1358,17 +1408,17 @@ export const questionsSection = {
     {
       name: "Supriya Rangadal",
       role: "Lead Program Manager – GenAI Fest",
-      image: Supriya,
+       image: "src/assets/Supriya.jpg",
     },
     {
       name: "Saikishore Tayi",
       role: "App & Infra – EC Coach",
-      image: SaiKishore,
+       image: "src/assets/SaiKishore.jpg",
     },
     {
       name: "Pankaj Kumar",
       role: "Chief Mentor & Coach",
-      image: Pankaj,
+       image: "src/assets/Pankaj.jpg",
     }
   ],
   closingNote: "Let the GenAI Fest begin!"

@@ -1,24 +1,21 @@
 import React from "react";
 
-const CardButton = ({ label, icon: Icon, description, onClick }) => {
+const CardButton = ({ title, description, icon, onClick }) => {
   return (
-    <div
+    <button
+      className="group relative bg-[#181F2A] border border-[#2A3341] rounded-xl px-3 py-2 max-w-[190px] min-h-[95px] flex flex-col justify-start items-start transition-all duration-300 hover:border-cyan-400/60 hover:shadow-cyan-400/10 focus:outline-none focus:ring-2 focus:ring-cyan-400/50
+      before:absolute before:top-0 before:left-0 before:w-3 before:h-3 before:rounded-tl-xl before:border-t-1 before:border-l-1 before:border-gray-200 before:bg-transparent before:z-10
+      after:absolute after:bottom-0 after:right-0 after:w-3 after:h-3 after:rounded-br-xl after:border-b-1 after:border-r-1 after:border-gray-200 after:bg-transparent after:z-10"
       onClick={onClick}
-      className="bg-gray-800 rounded-lg p-3 hover:bg-gray-750 transition-colors cursor-pointer border border-gray-700 hover:border-gray-600 min-h-[90px] flex flex-col justify-between w-full h-full"
-      style={{ minHeight: 95 }}
     >
-      <div className="flex items-start mb-2">
-        <div className="w-8 h-8 bg-gray-700 rounded-lg flex items-center justify-center mr-2">
-          {Icon && <Icon size={18} className="text-gray-300" />}
-        </div>
-        <div>
-          <h3 className="text-base font-semibold text-white mb-1">{label}</h3>
-          {description && (
-            <p className="text-gray-400 text-xs leading-relaxed">{description}</p>
-          )}
-        </div>
+      <div className="flex items-center mb-2">
+        <span className="w-6 h-6 flex items-center justify-center rounded bg-cyan-400/20 mr-3">
+          {icon && React.createElement(icon, { size: 16, color: '#00CFFF' })}
+        </span>
+        <h3 className="text-white text-sm font-semibold tracking-tight" style={{color:'#00CFFF'}}>{title}</h3>
       </div>
-    </div>
+      <p className="text-gray-300 text-[10px] font-normal leading-snug text-left w-full" style={{marginTop:2, textAlign: 'left', wordBreak: 'break-word'}}>{description}</p>
+    </button>
   );
 };
 
